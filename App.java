@@ -23,11 +23,12 @@ public class App {
                 funcionarios[1] = new Funcionario(200, "Ze Maria", 7000, Atleta.Modalidade.FUTEBOL);
                 funcionarios[2] = new Funcionario(300, "Ze Maria", 7000, Atleta.Modalidade.NONE);
 
-                Atleta atletas[] = new Atleta[4];
+                Atleta atletas[] = new Atleta[5];
                 atletas[0] = funcionarios[0];
                 atletas[1] = (Atleta)alunos[2];
                 atletas[2] = funcionarios[1];
                 atletas[3] = funcionarios[2];
+                atletas[4] = new AlunoAtleta(1012, "Fulano", Atleta.Modalidade.NATACAO);
 
                 for (int i = 0; i < atletas.length; i++) {
                         System.out.println(atletas[i].getModalidade());
